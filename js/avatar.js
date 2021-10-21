@@ -6,6 +6,9 @@ class Avatar {
   }
 
   cargar() {
+    particlesJS.load('particles-js', 'particles.json', function() {
+      console.log('callback - particles.js config loaded');
+    });
     let opciones = {
       method: 'GET',
       mode: 'cors', // no-cors, *cors, same-origin
@@ -50,6 +53,7 @@ class Avatar {
       p.appendChild(document.createTextNode(poder.nombre))
     })
   }
+ 
 }
 
 new Avatar()

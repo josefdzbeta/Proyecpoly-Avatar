@@ -1,5 +1,5 @@
 body{
-  font-family: arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #contenedor{
@@ -11,9 +11,20 @@ body{
    display: inline-block;
    vertical-align: top;
 }
-
+#particles-js {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
 #divAvatar{
   width: 50%;
+  background-size: cover;
 }
 
 #divDatos{

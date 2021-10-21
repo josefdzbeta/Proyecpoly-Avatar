@@ -2,7 +2,7 @@ body{
   background-image: url('../img/fondo.jpg');
   background-repeat: no-repeat;
   background-color: #111111;
-  font-family: arial;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #divModal{
