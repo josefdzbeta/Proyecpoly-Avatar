@@ -1,10 +1,12 @@
 body{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(white,lightgray,rgb(157, 235, 245)) fixed;
 }
 
 #contenedor{
   display: flex;
   flex-wrap: wrap;
+  
 }
 
 #divAvatar, #divDatos{
@@ -36,14 +38,18 @@ body{
 
 #divAvatar > img{
   max-width: 100%;
-  max-height: 800px;
+  max-height: 700px;
 }
 
 #pNombre{
   font-weight: bold;
-  color: darkred;
-  font-size: 2em;
+  /*color: rgb(255, 0, 0);*/
+  color: white;
+  font-size: 2.5em;
+  text-shadow: 1px 1px 3px black;
+  
 }
+
 
 #divEquipo, .barra{
   display: flex;
@@ -78,21 +84,27 @@ body{
 #divVida {
   color: red;
 }
+#divVida:hover, #divPoder:hover, #divExperiencia:hover{
+  transition: 0.5s;
+  text-shadow: 0px 0px 2px black;
+
+}
 
 #divVida > div >div {
   background-color: red;
+
 }
 
 #divPoder {
-  color: blue;
+  color: rgb(0, 132, 255);
 }
 
 #divPoder > div >div {
-  background-color: blue;
+  background-color: rgb(0, 132, 255);
 }
 
 #divExperiencia {
-  color: gold;
+  color: rgb(255, 251, 0);
 }
 
 #divExperiencia > div >div {
@@ -102,12 +114,17 @@ body{
 #divPoderes{
   display: flex;
   flex-direction: column;
-  color: grey;
+  color: rgb(102, 101, 101);
+  transition: 1s ease 0.3s;
+}
+#divPoderes:hover{
+  margin-left: 25px;
 }
 
 #divPoderes p{
   font-size: 2em;
 }
+
 
 #divPoderes div{
   display: flex;

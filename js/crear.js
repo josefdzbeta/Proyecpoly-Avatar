@@ -76,7 +76,7 @@ function seleccionarImagen(evento){
   //Quitamos el borde a todas las imágenes
   for(let img of document.querySelectorAll('#divImagenes img'))
     img.style.border = '1px solid grey'
-  evento.target.style.border = '3px solid blue'
+  evento.target.style.border = '3px solid rgb(0, 132, 255)'
   let url = evento.target.src
   imagenSeleccionada = url.substr(url.lastIndexOf('/') + 1, url.length)
 }
@@ -99,7 +99,7 @@ function seleccionarPoder(evento){
   //Quitamos el borde a todas las imágenes
   for(let img of document.querySelectorAll('#divPoderes img'))
     img.style.border = '1px solid grey'
-  evento.target.style.border = '3px solid blue'
+  evento.target.style.border = '3px solid rgb(0, 132, 255)'
   let url = evento.target.src
   poderSeleccionado = {}
   poderSeleccionado.imagen = url.substr(url.lastIndexOf('/') + 1, url.length)

@@ -36,7 +36,7 @@
           }
       },
       "size": {
-          "value": 2,
+          "value": 3,
           "random": true,
           "anim": {
               "enable": true,
@@ -75,7 +75,7 @@
               "mode": "bubble"
           },
           "onclick": {
-              "enable": false,
+              "enable": true,
               "mode": "repulse"
           },
           "resize": true

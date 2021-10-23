@@ -3,12 +3,14 @@ class Avatar {
     //Espera que se llame con http://.../#alumno
     this.alumno = window.location.hash.substr(1)
     window.onload = this.cargar.bind(this)
-  }
-
-  cargar() {
+    //Cargar particulas 
     particlesJS.load('particles-js', 'particles.json', function() {
       console.log('callback - particles.js config loaded');
     });
+  }
+
+  cargar() {
+   
     let opciones = {
       method: 'GET',
       mode: 'cors', // no-cors, *cors, same-origin
@@ -20,7 +22,11 @@ class Avatar {
         'Content-Type': 'application/json', // 'application/x-www-form-urlencoded',
         'charset': 'utf-8'
       }
+      
     }
+    particlesJS.load('particles-js', 'particles.json', function() {
+      console.log('callback - particles.js config loaded');
+    });
     fetch('./alumnos/' + this.alumno + '.json', opciones)
       .then(respuesta => respuesta.json())
       .then(avatar => this.mostrar(avatar))
